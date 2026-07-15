@@ -1,0 +1,147 @@
+/* Universal Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #f7fafc;
+}
+
+/* Modern Navigation Layout */
+header {
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2b6cb0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #2b6cb0;
+}
+
+/* Intro Hero Section */
+.hero-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+/* Content & Structural Wrappers */
+.content-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-section h2 {
+    font-size: 1.75rem;
+    color: #1a202c;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Professional Cards */
+.education-card, .project-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media(min-width: 600px) {
+    .project-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.tech-tag {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 8px 4px 12px 0;
+}
+
+/* Skills Categories */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media(min-width: 600px) {
+    .skills-container { flex-direction: row; justify-content: space-between; }
+}
+
+.skills-category ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #4a5568;
+}
+
+/* Minimalist Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #a0aec0;
+    font-size: 0.875rem;
+}
